@@ -15,3 +15,8 @@
 "scripts": {
     "start": "node app.js"
   },
+
+
+### Lo ideal en NODEJS para el sistema de modulos es usar ESModules en vez de commonJS porque es mas moderno y recomendado.
+
+### Lo primero es ir al package json e ingresar el type que viene default  hay que cambiarlo a "module"
