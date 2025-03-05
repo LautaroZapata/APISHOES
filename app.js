@@ -13,7 +13,7 @@ app.use(cors())
 
 
 
-const PORT = process.env.PORT ?? 3000
+const PORT = process.env.PORT ?? 3000 // Si el puerto viene por variable de entorno, lo usamos. Si no, usamos el puerto 3000.
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

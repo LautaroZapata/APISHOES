@@ -9,3 +9,9 @@
 
 
 ### Con node --watch app.js ponemos a correr a app.
+
+
+### Cuando ya tenemos el repositorio y queremos correr nuestra app agregamos al package json  
+"scripts": {
+    "start": "node app.js"
+  },
