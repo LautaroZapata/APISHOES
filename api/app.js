@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const shoesJSON = require('../shoes.json');
+const shoesJSON = require('./shoes.json');
 const crypto = require('node:crypto');
 const cors = require('cors');
 const { validateShoe, validatePartialShoe } = require('./schemas/shoes.js'); // Importamos la función validateShoe del archivo shoes.js
