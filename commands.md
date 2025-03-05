@@ -1,0 +1,11 @@
+### Con npx servor ./web (nombre de la carpeta donde tenga el html) me levanta una url de la pagina web
+
+### Para evitar el error de CORS tenemos que habilitar que cualquier persona ingrese a nuestro dominio (res.header('Access-Control-Allow-Origin', '*'); // Permitimos que cualquier cliente haga una petición a nuestro servidor.)
+
+
+### La forma mas facil para arreglarlo es instalar un middleware npm install cors -E luego ponemos const cors = require ('cors)
+
+### app.use(cors())
+
+
+### Con node --watch app.js ponemos a correr a app.

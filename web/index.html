@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            height: auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+    <script type="module"> 
+        fetch('http://localhost:3000/shoes') // Hago un fetch a la url de la API
+        .then(res => res.json())
+        .then (shoes => { // Con la respuesta de la API, hago un map para recorrer el array de objetos y mostrarlos en el HTML
+            const html = shoes.map (shoe => {
+                //Le ponemos data-id para que tenga el ID que posteriormente vamos a recuperar
+                return `
+                    <article data-id="${shoe.id}"> 
+                        <h2>${shoe.model}</h2>
+                        <p>${shoe.brand}</p>
+                        <p>${shoe.price}</p>
+                        <p>${shoe.color}</p>
+                        <img src="${shoe.image}">
+                        
+                        <button>Eliminar</button>
+                    </article>
+                `
+            }).join('') // Para que NO me devuelva un array, sino un string
+            document.querySelector('main').innerHTML = html // Lo meto en el HTML
+
+            document.addEventListener('click', e  => { // Evento para eliminar un shoe
+                if(e.target.matches('button')){ // Si el target es un botón
+                    const article = e.target.closest('article') // Busco el artículo más cercano
+                    const id = article.dataset.id // Recupero el ID del artículo
+                    fetch(`http://localhost:3000/shoes/${id}`, { // Hago un fetch a la url de la API con el ID
+                        method: 'DELETE' // Método DELETE
+                    })
+                    .then(res => res.json()) // Recibo la respuesta en formato JSON
+                    .then(() => {
+                        article.remove() // Elimino el artículo
+                }) 
+            }
+        })
+        })
+    </script>
+</head>
+<body>
+    <main></main>
+</body>
+</html>

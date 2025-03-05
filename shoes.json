@@ -1,0 +1,73 @@
+[
+    
+        {
+            "brand": "Nike",
+            "model": "Dunk Low 'Panda'",
+            "color": "Black/White",
+            "price": 110,
+            "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/59e334d1-18a5-4c3b-b04f-d21d1cb84c9e/dunk-low-retro-shoes.png"
+        },
+        {
+            "brand": "Nike",
+            "model": "Air Force 1 '07",
+            "color": "White/White",
+            "price": 115,
+            "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/jBrhbr/air-force-1-07-mens-shoes.png"
+        },
+        {
+            "brand": "Jordan",
+            "model": "Air Jordan 1 Retro High OG 'Chicago'",
+            "color": "White/Black-Varsity Red",
+            "price": 180,
+            "image": "https://image.goat.com/750/attachments/product_template_pictures/images/009/661/349/original/555088_101.png.png"
+        },
+        {
+            "brand": "Adidas",
+            "model": "Yeezy Boost 350 V2 'Zebra'",
+            "color": "White/Core Black/Red",
+            "price": 220,
+            "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/3d1a6a4775294c37bb84ad0200c5ea4c_9366/Yeezy_Boost_350_V2_Zebra.jpg"
+        },
+        {
+            "brand": "Puma",
+            "model": "Suede Classic",
+            "color": "Red/White",
+            "price": 70,
+            "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/374915/01/fnd"
+        },
+        {
+            "brand": "New Balance",
+            "model": "550 'White Green'",
+            "color": "White/Green",
+            "price": 110,
+            "image": "https://image.goat.com/750/attachments/product_template_pictures/images/054/364/201/original/BB550WT1.png.png"
+        },
+        {
+            "brand": "Nike",
+            "model": "Air Max 90",
+            "color": "Infrared",
+            "price": 120,
+            "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4d56770-a15c-4e02-b3d3-2ccdf7bfbd8f/air-max-90-shoes.png"
+        },
+        {
+            "brand": "Jordan",
+            "model": "Air Jordan 4 Retro 'Bred'",
+            "color": "Black/Red",
+            "price": 210,
+            "image": "https://image.goat.com/750/attachments/product_template_pictures/images/009/307/544/original/308497_060.png.png"
+        },
+        {
+            "brand": "Adidas",
+            "model": "Superstar",
+            "color": "White/Black",
+            "price": 85,
+            "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/982ff2433c184f8a90e3ac6600d1eab5_9366/Superstar_Shoes_White_EG4958.jpg"
+        },
+        {
+            "brand": "Puma",
+            "model": "RS-X",
+            "color": "White/Multi",
+            "price": 110,
+            "image": "https://images.puma.com/image/upload/f_auto,q_auto/global/368942/13/sv01/fnd/PNA"
+        }
+]

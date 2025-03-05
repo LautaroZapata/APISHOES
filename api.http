@@ -1,0 +1,31 @@
+// Recupero todas los shoes 
+
+GET http://localhost:3000/shoes
+
+
+// Recupero SHOES por BRAND
+
+GET http://localhost:3000/shoes?brand=ADIdas
+
+// Crear un nuevo SHOE
+
+POST http://localhost:3000/shoes
+Content-Type: application/json
+
+{
+    "brand": "Adidas",
+    "model": "Response CL",
+    "color" : "Brown",
+    "price" : 200,
+    "image": "https://acdn-us.mitiendanube.com/stores/003/194/492/products/5-8472622dc786210b8517368874315700-1024-1024.webp"
+}
+
+
+// Actualizar una parte de un SHOE
+
+PATCH http://localhost:3000/shoes/70990965-5c9e-4b38-a257-796aff39a46b
+Content-Type: application/json
+
+{
+    "price": 150
+}   
